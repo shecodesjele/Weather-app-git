@@ -1,0 +1,119 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lan<!-- @format -->
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Weather app</title>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://kit.fontawesome.com/5e6cff15ff.js"
+        crossorigin="anonymous"
+      ></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="src/.css" />
+    </head>
+
+    <body>
+      <form id="city-search">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city"
+          autocomplete="on"
+        />
+        <input type="submit" class="searchbutton" />
+      </form>
+      <button type="button" class="btn btn-success" id="current-temp-button">
+        Current
+      </button>
+      <header class="todaysve">
+        <h1>Rijeka</h1>
+        <small> Sunday, 11:55</small>
+        <div>
+          <span class="weathernumber" id="stupnjevi">25</span>
+          <span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </span>
+          <span id="description"></span>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div><strong>Pressure</strong></div>
+            <div id="press">hPa</div>
+          </div>
+          <div class="col">
+            <div><strong>Humidity </strong></div>
+            <div id="humi">%</div>
+          </div>
+          <div class="col">
+            <div><strong> Wind</strong></div>
+            <div id="windd">km/h</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="row all-days">
+        <div class="col single-day">
+          <div class="days-of-week">Monday</div>
+          <div class="min-temp">22º</div>
+          <i class="fas fa-sun"></i>
+          <div class="max-temp">27º</div>
+        </div>
+        <div class="col single-day">
+          <div class="days-of-week">Tuesday</div>
+          <div class="min-temp">22º</div>
+          <i class="fas fa-sun"></i>
+          <div class="max-temp">27º</div>
+        </div>
+
+        <div class="col single-day">
+          <div class="days-of-week">Wednesday</div>
+          <div class="min-temp">21º</div>
+          <i class="fas fa-cloud"></i>
+          <div class="max-temp">27º</div>
+        </div>
+
+        <div class="col single-day">
+          <div class="days-of-week">Thursday</div>
+          <div class="min-temp">20º</div>
+          <i class="fas fa-cloud-sun-rain"></i>
+          <div class="max-temp">25º</div>
+        </div>
+        <div class="col single-day">
+          <div class="days-of-week">Friday</div>
+          <div class="min-temp">19º</div>
+          <i class="fas fa-cloud-rain"></i>
+          <div class="max-temp">24º</div>
+        </div>
+        <div class="col single-day">
+          <div class="days-of-week">Saturday</div>
+          <div class="min-temp">18º</div>
+          <i class="fas fa-cloud-rain"></i>
+          <div class="max-temp">23º</div>
+        </div>
+      </div>
+
+      <script src="src/.js"></script>
+    </body>
+  </html>
+</html>

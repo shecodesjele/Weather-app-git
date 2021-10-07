@@ -1,0 +1,99 @@
+/** @format */
+
+body {
+  font-family: "PT Mono", monospace;
+  margin-left: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+small {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  line-height: 1.5;
+}
+span {
+  font-size: 150px;
+  margin-left: 50px;
+}
+.entercity {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #e8ecf3;
+}
+
+.todaysve {
+  width: 650px;
+  height: 450px;
+  line-height: 1.5;
+  padding: 30px 30px 0px 30px;
+  margin-bottom: 20px;
+  background: #e8ecf3;
+  border-radius: 10px;
+}
+
+.sun-icon {
+  font-size: 80px;
+}
+
+.row {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.all-days {
+  width: 670px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.single-day {
+  background-color: #e8ecf3;
+  margin-left: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  padding-top: 25px;
+}
+.days-of-week {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.min-temp {
+  margin-bottom: 10px;
+}
+.max-temp {
+  margin-top: 10px;
+}
+input {
+  width: 440px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  border-radius: 5px;
+}
+
+input.searchbutton {
+  width: 100px;
+  background-color: #e8ecf3;
+}
+input.searchbutton:hover {
+  background: #c2d4f3;
+  color: black;
+}
+#current-temp-button {
+  width: 100px;
+  height: 40px;
+}
+.units {
+  font-size: 20px;
+  margin: 0px;
+  margin-right: 20px;
+}
+#description {
+  font-size: 40px;
+  font-weight: bold;
+}
