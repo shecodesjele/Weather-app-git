@@ -20,8 +20,6 @@ let day = days[now.getDay()];
 let ispis = document.querySelector("small");
 ispis.innerHTML = `${day}, ${hours}:${minutes}`;
 
-/////////////////////////////  Kada upisem u search grad, taj isti grad se pojavi u h1 tj dijelu gdje treba pisat grad
-
 function displayWeather(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#stupnjevi").innerHTML = Math.round(
